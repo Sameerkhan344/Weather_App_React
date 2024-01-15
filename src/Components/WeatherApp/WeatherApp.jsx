@@ -76,33 +76,33 @@ const WeatherApp = () => {
 
   return (
     <>
-      <div className="container w-[607px] h-[809px] m-auto mt-[75px] rounded-[12px] bg-gradient-to-b from-purple-600 to-blue-600">
+      <div className="container w-full h-[829px] md:w-[607px] lg:w-[607px] xl:w-[607px] m-auto md:mt-[75px] rounded-[12px] bg-gradient-to-b from-purple-600 to-blue-600 ">
         <div className="weather_img mt-[29px] flex justify-center">
-          <img src={wicon} alt="" />
+          <img src={wicon} alt="" className="h-[180px]" />
         </div>
-        <div className="weather-temp flex justify-center text-white text-[120px] font-normal">
+        <div className="weather-temp flex justify-center text-white text-[100px] font-normal">
           24°c
         </div>
         <div className="weather-location flex justify-center text-white text-[60px] font-normal">
           London
         </div>
-        <div className="data-container mt-[50px] text-white flex justify-center">
+        <div className="data-container mt-[80px] text-white flex justify-center">
           <div className="element m-auto flex content-start gap-[12px]">
             <img src={humidity} className="icon mt-[10px]" alt="" />
             <div className="data text-[34px] font-normal">
               <div className="humidity-percent">64</div>
-              <div className="text text-[20px] font-normal">Humidity</div>
+              <div className="text text-[25px] font-normal">Humidity</div>
             </div>
           </div>
           <div className="element m-auto flex content-start gap-[12px]">
             <img src={wind} className="icon mt-[10px]" alt="" />
             <div className="data text-[34px] font-normal">
               <div className="wind-rate">18 km/h</div>
-              <div className="text text-[20px] font-normal">Wind Speed</div>
+              <div className="text text-[25px] font-normal">Wind Speed</div>
             </div>
           </div>
         </div>
-        <div className="top-bar flex justify-center gap-[14px] pt-[60px]">
+        <div className="top-bar flex justify-center gap-[14px] pt-[100px]">
           <input
             type="text"
             className="cityInput flex w-[362px] h-[78px] bg-[#ebfffc] border-none outline-none rounded-[40px] pl-[40px] text-[#626262] text-[20px] font-normal"
