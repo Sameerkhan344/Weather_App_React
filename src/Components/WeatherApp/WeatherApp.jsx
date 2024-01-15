@@ -76,7 +76,7 @@ const WeatherApp = () => {
 
   return (
     <>
-      <div className="container w-[607px] h-[809px] m-auto mt-[75px] rounded-[12px] bg-gradient-to-b from-purple-600 to-blue-600 h-[900px]">
+      <div className="container w-[607px] h-[809px] m-auto mt-[75px] rounded-[12px] bg-gradient-to-b from-purple-600 to-blue-600">
         <div className="weather_img mt-[29px] flex justify-center">
           <img src={wicon} alt="" />
         </div>
