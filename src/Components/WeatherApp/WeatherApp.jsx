@@ -75,15 +75,19 @@ const WeatherApp = () => {
   };
 
   return (
-    <>
-      <div className="container w-full md:h-[829px] lg:h-[829px] xl:h-[829px] md:w-[607px] lg:w-[607px] xl:w-[607px] m-auto md:mt-[75px] rounded-[12px] bg-gradient-to-b from-purple-600 to-blue-600 ">
+    <div className="flex justify-center items-center min-h-screen">
+      <div className="container w-full h-max md:h-[829px] lg:h-[829px] xl:h-[829px] md:w-[607px] lg:w-[607px] xl:w-[607px] m-auto md:mt-[75px] rounded-[12px] bg-gradient-to-b from-purple-600 to-blue-600 ">
         <div className="weather_img mt-[29px] flex justify-center">
-          <img src={wicon} alt="" className="h-[180px]" />
+          <img
+            src={wicon}
+            alt=""
+            className="h-[150px] md:h-[180px] lg:h-[180px] xl:h-[180px]"
+          />
         </div>
-        <div className="weather-temp flex justify-center text-white text-[60px] md:text-[100px] lg:text-[100px] xl:text-[100px] font-normal">
+        <div className="weather-temp flex justify-center text-white text-[70px] md:text-[100px] lg:text-[100px] xl:text-[100px] font-normal">
           24°c
         </div>
-        <div className="weather-location flex justify-center text-white text-[60px] md:text-[80px] lg:text-[80px] xl:text-[80px] font-normal">
+        <div className="weather-location flex justify-center text-white text-[50px] md:text-[80px] lg:text-[80px] xl:text-[80px] font-normal">
           London
         </div>
         <div className="data-container mt-[30px] md:mt-[80px] lg:mt-[80px] xl:mt-[80px] text-white flex justify-center">
@@ -102,14 +106,14 @@ const WeatherApp = () => {
             </div>
           </div>
         </div>
-        <div className="top-bar flex justify-center gap-[14px] py-[30px] md:pt-[100px] lg:pt-[100px] xl:pt-[100px]">
+        <div className="top-bar flex justify-center gap-[14px] py-[50px] md:py-[70px] lg:py-[70px] xl:py-[70px]">
           <input
             type="text"
-            className="cityInput flex w-[362px] h-[60px] md:h-[78px] lg:h-[78px] xl:h-[78px] bg-[#ebfffc] border-none outline-none rounded-[40px] pl-[40px] text-[#626262] text-[20px] font-normal"
+            className="cityInput flex w-[280px] md:w-[400px] lg:w-[400px] xl:w-[400px] h-[70px] md:h-[78px] lg:h-[78px] xl:h-[78px] bg-[#ebfffc] border-none outline-none rounded-[40px] pl-[40px] text-[#626262] text-[20px] font-normal"
             placeholder="Search"
           />
           <div
-            className="search-icon flex justify-center items-center w-[78px]  h-[60px] md:h-[78px] lg:h-[78px] xl:h-[78px] bg-[#ebfffc] rounded-[40px] cursor-pointer"
+            className="search-icon flex justify-center items-center w-[70px] md:w-[78px] lg:w-[78px]  h-[70px] md:h-[78px] lg:h-[78px] xl:h-[78px] bg-[#ebfffc] rounded-[40px] cursor-pointer"
             onClick={() => {
               searchHandler();
             }}
@@ -118,7 +122,7 @@ const WeatherApp = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
