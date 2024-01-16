@@ -76,7 +76,7 @@ const WeatherApp = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen">
-      <div className="container w-full h-max md:h-[829px] lg:h-[829px] xl:h-[829px] md:w-[607px] lg:w-[607px] xl:w-[607px] m-auto md:mt-[75px] rounded-[12px] bg-gradient-to-b from-purple-600 to-blue-600 ">
+      <div className="container w-full h-max-h-fit md:h-[829px] lg:h-[829px] xl:h-[829px] md:w-[607px] lg:w-[607px] xl:w-[607px] m-auto md:mt-[75px] rounded-[12px] bg-gradient-to-b from-purple-600 to-blue-600 ">
         <div className="weather_img mt-[29px] flex justify-center">
           <img
             src={wicon}
@@ -92,17 +92,27 @@ const WeatherApp = () => {
         </div>
         <div className="data-container mt-[30px] md:mt-[80px] lg:mt-[80px] xl:mt-[80px] text-white flex justify-center">
           <div className="element m-auto flex content-start gap-[12px]">
-            <img src={humidity} className="icon mt-[10px]" alt="" />
-            <div className="data text-[34px] font-normal">
+            <img
+              src={humidity}
+              className="icon mt-[25px] md:mt-[25px] lg:mt-[25px] xl:mt-[25px] h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[40px] lg:w-[40px] xl:h-[40px] xl:w-[40px]"
+              alt=""
+            />
+            <div className="data text-[25px] md:text-[34px] lg:md:text-[34px]  xl:md:text-[34px]  font-normal">
               <div className="humidity-percent">64</div>
-              <div className="text text-[25px] font-normal">Humidity</div>
+              <div className="text text-[20px] font-normal">Humidity</div>
             </div>
           </div>
           <div className="element m-auto flex content-start gap-[12px]">
-            <img src={wind} className="icon mt-[10px]" alt="" />
-            <div className="data text-[34px] font-normal">
+            <img
+              src={wind}
+              className="icon mt-[25px] md:mt-[25px] lg:mt-[25px] xl:mt-[25px] h-[30px] w-[30px] md:h-[40px] md:w-[40px] lg:h-[40px] lg:w-[40px] xl:h-[40px] xl:w-[40px]"
+              alt=""
+            />
+            <div className="data text-[25px] md:text-[34px] lg:md:text-[34px]  xl:md:text-[34px]font-normal">
               <div className="wind-rate">18 km/h</div>
-              <div className="text text-[25px] font-normal">Wind Speed</div>
+              <div className="text text-[20px] md:text-[25px]font-normal">
+                Wind Speed
+              </div>
             </div>
           </div>
         </div>
